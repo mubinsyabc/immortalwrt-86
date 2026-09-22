@@ -58,3 +58,9 @@ if [ -f "$MOSDNS_MK" ]; then
   sed -i 's|^GO_PKG:=github.com/IrineSistiana/mosdns$|GO_PKG:=github.com/IrineSistiana/mosdns/v5|' "$MOSDNS_MK"
   grep -E 'PKG_VERSION|PKG_HASH|^GO_PKG:=' "$MOSDNS_MK"
 fi
+# 修改升级检测
+sed -i 's|/Blueplanet20120/immortalwrt-86|/mubinsyabc/immortalwrt-86|g' files/usr/share/Check_Update.sh
+sed -i 's|/Blueplanet20120/immortalwrt-86|/mubinsyabc/immortalwrt-86|g' files/usr/share/Lenyu-auto.sh
+sed -i 's|/Blueplanet20120/immortalwrt-86|/mubinsyabc/immortalwrt-86|g' files/usr/share/Lenyu-version.sh
+sed -i 's|/Blueplanet20120/immortalwrt-86|/mubinsyabc/immortalwrt-86|g' files/usr/share/Lenyu-pw.sh
+
