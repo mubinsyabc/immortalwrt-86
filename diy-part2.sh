@@ -63,4 +63,6 @@ sed -i 's|/Blueplanet20120/immortalwrt-86|/mubinsyabc/immortalwrt-86|g' files/us
 sed -i 's|/Blueplanet20120/immortalwrt-86|/mubinsyabc/immortalwrt-86|g' files/usr/share/Lenyu-auto.sh
 sed -i 's|/Blueplanet20120/immortalwrt-86|/mubinsyabc/immortalwrt-86|g' files/usr/share/Lenyu-version.sh
 sed -i 's|/Blueplanet20120/immortalwrt-86|/mubinsyabc/immortalwrt-86|g' files/usr/share/Lenyu-pw.sh
-
+echo "CONFIG_PACKAGE_luci-app-openclash=y" >> .config
+echo "CONFIG_PACKAGE_luci-app-mihomo=y" >> .config
+echo "CONFIG_PACKAGE_mihomo=y" >> .config
