@@ -718,3 +718,8 @@ fi
 echo_blue "=== 官方 OPKG 源热升级流完成，网络已无缝接管 ==="
 exit 0
 EOF_PW
+# 添加 OpenClash 源码（OpenClash 本身在 package 目录，不通过 feed 安装）
+git clone --depth 1 https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+
+# 添加 Mihomo 的 feed 源
+echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> "feeds.conf.default"
